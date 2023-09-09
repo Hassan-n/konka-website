@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  color: white;
+  background-color: black;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+.header {
+  width: 100%;
+  background-color: transparent;
+}
+
+.header .nav-bar {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  line-height: 80px;
+  margin: auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  background-color: rgba(255, 0, 0, 0.9);
+}
+
+.header .nav-bar .logo {
+  z-index: 2;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.header .nav-bar .logo a img{
+  margin-top: 5px;
+}
+
+.header .nav-bar .menu {
+  z-index: 2;
+}
+
+.header .nav-bar .menu ul li {
+  margin-right: 10px;
+}
+
+.header .nav-bar .menu ul li a {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  color: white;
+}
+
+.header .nav-bar .menu ul li a:hover {
+  opacity: 1;
+  background-color: black;
+  color: white;
+}
+
+.header .nav-bar .social-media {
+  z-index: 1;
+}
+
+.header .nav-bar .social-media ul li i {
+  color: white;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 5px;
+  text-align: center;
+  align-items: center;
+  font-size: 19px;
+  border-radius: 5px;
+  box-shadow: 0 0 25px rgba(24, 24, 24, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-facebook:hover {
+  background-color: #3b5998;
+}
+
+.fa-twitter:hover {
+  background-color: #00acee;
+}
+
+.fa-instagram:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.fa-youtube-play:hover {
+  background-color: #c4302b;
+}
+
+.fa-whatsapp:hover {
+  background-color: #25d366;
+}
+
+.container{
+  display: flex;
+}
+
+.about-container{
+  display: flex;
+  background-color: black; 
+}
+
+#about h1{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.aboutText{
+  background-color: white;
+  font-size: 1.1rem;
+  font-weight: 420;
+  line-height: 30px;
+  color: black;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
+
+.aboutVideo{
+  width: 50%;
+}
+
+.aboutVideo .video{
+  width: 100%;
+}
+
+#location h1{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.locationText{
+  background-color: white;
+  font-size: 1.3rem;
+  font-weight: 420;
+  line-height: 30px;
+  color: black;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
+
+.locationMap{
+  width: 50%;
+}
+
+#functions h1{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.functionText{
+  background-color: white;
+  font-size: 1.3rem;
+  font-weight: 420;
+  line-height: 30px;
+  color: black;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
+
+.functionImages{
+  width: 50%;
+}
+
+/* Slideshow container */
+#functions .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+#functions .mySlides1 {
+  display: none;
+}
+
+/* Next & previous buttons */
+#functions .prev, #functions .next {
+  background-color: rgba(0,0,0,0.9);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+#functions .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#functions .prev:hover, #functions .next:hover {
+  color: red;
+}
+
+/* Caption text */
+#functions .text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* The dots/bullets/indicators */
+#functions .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#functions .active,#functions .dot:hover {
+  background-color: red;
+}
+
+/* Fading animation */
+#functions .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.events-container .events{
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 30%;
+}
+
+.events-container .events img{
+  cursor: pointer;
+}
+
+.events-container .events img:hover{
+  transform: scale(1.5);
+}
+
+.events-container .popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  backdrop-filter: blur(5px);
+}
+
+.events-container .popup-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.events-container .popup img {
+  height: 500px;
+  width: 500px;
+}
+
+.events-container .close {
+  color: red;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 7rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#menu h1{
+  padding-bottom: 60px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.menuText {
+  background-color: white;
+  font-size: 1.3rem;
+  font-weight: 420;
+  line-height: 30px;
+  color: black;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
+
+.menuText a:hover{
+  text-decoration: underline;
+}
+
+.menuImages{
+  width: 50%;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+#menu .slideshow2-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+#menu .mySlides2 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+#menu .cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+#menu .prev,
+#menu .next {
+  background-color: rgba(0,0,0,0.9);
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+#menu .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#menu .prev:hover,
+#menu .next:hover {
+  color: red;
+}
+
+/* Number text (1/3 etc) */
+#menu .numbertext {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0,0,0,0.9);
+}  
+
+/* Container for image text */
+#menu .caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+  font-size: 2rem;
+}
+
+#menu .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+#menu .column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+#menu .demo {
+  opacity: 0.6;
+}
+
+#menu .active,
+#menu .demo:hover {
+  opacity: 1;
+}
+
+/* Fading animation */
+#menu .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+#beverages{
+  margin-bottom: 25px;
+}
+
+#beverages h1{
+  margin-bottom: 60px;
+  margin-top: 60px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bevText{
+  background-color: white;
+  font-size: 1.3rem;
+  font-weight: 420;
+  line-height: 30px;
+  color: black;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
+
+.bevText a:hover{
+  text-decoration: underline;
+}
+
+.bevImages{
+  width: 50%;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+#beverages .slideshow2-container {
+  position: relative;
+  background-color: white;
+}
+
+/* Hide the images by default */
+#beverages .mySlides2 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+#beverages .cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+#beverages .prev,
+#beverages .next {
+  background-color: rgba(0,0,0,0.9);
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+#beverages .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#beverages .prev:hover,
+#beverages .next:hover {
+  color: red;
+}
+
+/* Number text (1/3 etc) */
+#beverages .numbertext {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0,0,0,0.9);
+}  
+
+/* Container for image text */
+#beverages .caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+  font-size: 2rem;
+}
+
+#beverages .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+#beverages .column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+#beverages .demo {
+  opacity: 0.6;
+}
+
+#beverages .active,
+#beverages .demo:hover {
+  opacity: 1;
+}
+
+/* Fading animation */
+#beverages .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.brands{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
